@@ -18,3 +18,7 @@
 	// concatenação é feita pelo operador .
 	$strVar = "string" . " " . "concatenada";
 	echo $strVar;
+
+	// funções úteis: http://php.net/manual/en/ref.strings.php
+
+	// strtoupper, strpos, substr, trim, strtolower, strcmp...
