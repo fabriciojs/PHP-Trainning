@@ -9,4 +9,7 @@
 		setcookie('chave', 'valor', time()+60, '/', 'php-dev.tilibra.com.br', false, true);
 	}
 
-	setcookie('__utmz', '', time()-1);
+	// remove o cookie
+	// setcookie('chave', '', time()-1);
+
+	// cookie = header Set-Cookie:

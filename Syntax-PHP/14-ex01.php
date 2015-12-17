@@ -3,14 +3,11 @@
 	 * Exercícios 01
 	 *
 	 * 	* Utilizar documentação php.net para ajuda
+	 * 			Google: php <problem>
 	 *
 	 * 	Objetivo: construir um script com exibição de HTML,
 	 * 	formulário, entrada de dados e processamento. Acessar
 	 * 	este script pelo navegador.
-	 *
-	 * Conhecimentos: HTML, síntaxe básica PHP (01-13)
-	 *
-	 * ---
 	 *
 	 * O que vamos fazer:
 	 *  - examinar e entender as superglobais
