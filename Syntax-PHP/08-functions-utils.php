@@ -51,3 +51,8 @@
 
 	var_dump(date('Y-m-d H:i:s'));
 	var_dump(date('d/m/Y H:i:s'));
+
+	// exit - encerra a execução do script
+	echo "exit\n";
+
+	exit;
