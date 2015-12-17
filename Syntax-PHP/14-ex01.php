@@ -28,6 +28,8 @@
 	 * 		- codificação HTML
 	 * 	- validar dados inseridos
 	 * 		- utilizar funções de str*, preg
+	 * 	- processar dados
+	 * 		- embaralhar as palavras da mensagem
 	 */
 ?>
 <html>

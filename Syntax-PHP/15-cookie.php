@@ -1,4 +1,6 @@
 <?php
+	echo "<pre>";
+
 	// vamos ver o que existe na variável
 	var_dump($_COOKIE);
 
