@@ -52,3 +52,5 @@
 	// acesso a elemento específico
 	
 	echo $arr[0], "\n";
+
+	// array multidimensional

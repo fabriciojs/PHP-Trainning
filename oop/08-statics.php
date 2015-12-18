@@ -1,0 +1,3 @@
+<?php
+	// métodos/atributos estáticos
+
