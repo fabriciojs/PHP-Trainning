@@ -4,28 +4,12 @@
 		class Pessoa {
 			const TIPO = 'pessoa';
 		}
-
-		$p = new Pessoa;
-
-		var_dump($p);
-
-		$p = new \Tilibra\Pessoa;
-
-		var_dump($p);
 	}
 
 	namespace Dev {
-		class Pessoa {
+		class Pessoa extends \Tilibra\Pessoa {
 			const TIPO = 'dev';
 		}
-
-		$p = new Pessoa;
-
-		var_dump($p);
-
-		$p = new \Dev\Pessoa;
-
-		var_dump($p);
 	}
 
 

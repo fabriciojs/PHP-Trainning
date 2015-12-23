@@ -3,7 +3,7 @@
 	// 
 	// procurar documentação PHP Extension OCI8
 
-	$conn = oci_connect('vendas', 'xpto11tb', '//192.168.1.48:1521/idev10g');
+	$conn = oci_connect('aloca', 'xpto11tb', '//192.168.1.48:1521/idev10g');
 
 	$stid = oci_parse($conn, 'select tablespace_name, table_name from user_tables');
 

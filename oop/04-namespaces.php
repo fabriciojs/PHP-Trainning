@@ -1,8 +1,6 @@
 <?php
 	namespace Treinamento;
 
-	require '03-namespaces.php';
-
 	$p = new \Tilibra\Pessoa;
 
 	var_dump($p);

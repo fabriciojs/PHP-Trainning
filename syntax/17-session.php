@@ -1,15 +1,19 @@
 <?php
-	// sessões
+
+	header("Content-Type: text/plain");
+	// // sessões
 	session_start(); // inicializa uma "sessão"
 
 	echo "ID da sessão: ", session_id(), "\n";
 
-	// observar info.php
+	// // observar info.php
 
-	if (empty($_SESSION['usuario'])) {
-		$_SESSION['usuario'] = 'logado';
-	} else {
-		$_SESSION['usuario'] .= 'o';
-	}
+	// // $_SESSION['usuario'] = 'Fábio C';
 
-	// importante: mesmo requisito do cookie (header)
+	// if (empty($_SESSION['usuario'])) {
+	// 	echo "faça o login\n";
+	// } else {
+	// 	echo "você é o {$_SESSION['usuario']}\n";
+	// }
+
+	// // importante: mesmo requisito do cookie (header)

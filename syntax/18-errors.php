@@ -1,12 +1,21 @@
 <?php
-	// captura erros
-	set_error_handler(function($level, $msg, $file, $line, $context) {
-		echo "ERROR level: $level, msg: $msg, file: $file, line: $line\n";
+	ini_set('display_errors', true);
+	error_reporting(E_ALL);
 
-		// echo "ERROR context: ";
-		// print_r($context);
-		// echo "\n";
+	register_shutdown_function(function() {
+		echo "bye!";
 	});
+
+	// captura erros
+	// set_error_handler(function($level, $msg, $file, $line, $context) {
+	// 	// echo "ERROR level: $level, msg: $msg, file: $file, line: $line\n";
+
+	// 	echo "Deu ruim!<br>";
+
+	// 	// echo "ERROR context: ";
+	// 	// print_r($context);
+	// 	// echo "\n";
+	// });
 
 	echo $var_nao_existe; // notice
 

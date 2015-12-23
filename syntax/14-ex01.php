@@ -21,17 +21,17 @@
 	 * 	- aprender sobre codificação para URL
 	 * 	- aprender sobre a entrada de dados por $_POST
 	 * 	- apresentar dados inseridos
-	 * 		- XSS
-	 * 		- codificação HTML
 	 * 	- validar dados inseridos
 	 * 		- utilizar funções de str*, preg
-	 * 	- processar dados
-	 * 		- embaralhar as palavras da mensagem
 	 */
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
 	<title>Treinamento PHP Microsoul - Exercício 01</title>
+
+	<link rel="stylesheet" type="text/css" href="https://goo.gl/tRt9DE">
+    <script src="https://goo.gl/Ze3rcq"></script>
 </head>
 <body>
 	<div>
@@ -39,7 +39,36 @@
 		<br>
 		<h2>Exercício 01</h2>
 		<div>
-			&lt;Criar formulário&gt;
+			<form action="?" method="POST">
+				<p>
+					<label>Nome:</label>
+					<input name="nome" type="text">
+				</p>
+				<p>
+					<label>Email:</label>
+					<input name="email" type="text">
+				</p>
+				<p>
+					<label>Mensagem:</label>
+					<textarea name="mensagem"></textarea>
+				</p>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+
+		<div>
+			<?php
+				// Nome: só letras e espaço, não vazio
+			?>
+			<p>
+				Nome: <b><?= $_POST['nome'] ?></b>
+			</p>
+			<p>
+				Email: <b><?= $_POST['email'] ?></b>
+			</p>
+			<p>
+				Mensagem: <b><?= $_POST['mensagem'] ?></b>
+			</p>
 		</div>
 	</div>
 </body>

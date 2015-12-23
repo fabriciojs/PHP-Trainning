@@ -4,12 +4,16 @@
 	// na pasta lib/ existe a definição
 	// do namespace Tilibra\Lib, e dentro dele, algumas
     // classes. Como fazer funcionar o seguinte trecho?
+    
+    spl_autoload_register(function($class) {
+    	$pieces = explode('\\', $class);
 
-	$func = new Tilibra\Lib\Funcionario(101);
+    	$path = strtolower($pieces[1]).'/'.$pieces[2].'.php';
 
-	$func->nome = 'Fábio';
-
-	var_dump($func);
+    	if (file_exists($path)) {
+  	  		require $path;
+  	  	}
+    });
 
 	// - conhecer SPL (Standard PHP Libraries)
 	// 	  - PHP info
