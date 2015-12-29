@@ -8,8 +8,14 @@
 
 		private $children = [];
 
-		public function __construct($tag) {
+		public function __construct($tag, array $attrs = null) {
 			$this->tag = $tag;
+
+			if (!empty($attrs)) {
+				foreach ($attrs as $attr => $value) {
+					$this->setAttr($attr, $value);
+				}
+			}
 		}
 
 		public function setAttr($attr, $value) {
@@ -32,10 +38,10 @@
 
 			if (!empty($this->attrs)) {
 				foreach ($this->attrs as $attr => $value) {
+					$value = htmlentities($value);
 					$str .= " {$attr}=\"{$value}\"";
 				}
 			}
-
 
 			if (empty($this->children)) {
 				$str .= ' />';
